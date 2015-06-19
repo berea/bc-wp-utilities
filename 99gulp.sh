@@ -17,15 +17,15 @@ if [ ! -f /usr/local/bin/sass ]; then
 	cp /usr/local/bin/scss /usr/bin	
 fi
 
+if [ ! -d /var/www/wordpress/wp-content/themes/bc-wp-2015/ ]; then
+	git clone https://github.com/berea/bc-wp-2015
+fi
+
 cd /var/www/wordpress/wp-content/themes/bc-wp-2015
 
 #checks to see if the devDependencies are installed
 if [ ! -d node_modules/ ]; then
 	npm install --save-dev
-fi
-
-if [ ! -d /var/www/wordpress/wp-content/themes/bc-wp-2015/ ]; then
-	git clone https://github.com/berea/bc-wp-2015
 fi
 
 gulp
