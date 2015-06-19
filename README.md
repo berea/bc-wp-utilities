@@ -17,3 +17,15 @@ npm installer to install the packages listed in the package.json file.
 Once you are finished developing and you would no long like the script to automatically start at each
 time you reboot your system, simply run the removeGulp.sh script.  This will remove the file from the
 scripts folder, thereby removing the 100gulp.sh from activating.
+
+##Installing Ruby and SASS##
+
+In your VMs terminal, type this:
+
+*apt-get install ruby*
+
+Accept the progress and once it finishes installing, type this:
+
+*gem install sass*
+
+This will install the appropriate dependencies for the gulp-ruby-sass to install.
