@@ -9,10 +9,10 @@
 echo "I'm a $OSTYPE computer!"
 
 if [[ "$OSTYPE" == "linux"* ]]; then
-	ls /usr/lib/inithooks/firstboot.d/
-	rm /usr/lib/inithooks/firstboot.d/100gulp.sh
+	ls /usr/lib/inithooks/everyboot.d/
+	rm /usr/lib/inithooks/everyboot.d/99gulp.sh
 	echo ""
-	ls /usr/lib/inithooks/firstboot.d/
+	ls /usr/lib/inithooks/everyboot.d/
 	
 #elif [[ "$OSTYPE" == "MAC"* ]]; then
 	#cp "gulpscript/100gulp.sh" "/Library/LaunchDaemons/"

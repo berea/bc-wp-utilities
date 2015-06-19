@@ -10,9 +10,9 @@ echo "I'm a $OSTYPE computer!"
 echo ""
 
 if [[ "$OSTYPE" == "linux"* ]]; then
-	ls /usr/lib/inithooks/firstboot.d/
-	cp ./100gulp.sh /usr/lib/inithooks/firstboot.d/
+	ls /usr/lib/inithooks/everyboot.d/
+	cp ./99gulp.sh /usr/lib/inithooks/everyboot.d/
 	echo ""
-	ls /usr/lib/inithooks/firstboot.d/
+	ls /usr/lib/inithooks/everyboot.d/
 
 fi
