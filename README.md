@@ -5,11 +5,7 @@
 The copy script is designed to deposit the 100gulp.sh into the folder of automatically started scripts
 whenever your system is restarted.  For Turnkey Linux (our testing environment), this is the:
 
-/usr/local/inithooks/firsthook.d/
-
-Whereas for Mac users it is the:
-
-/Library/LaunchDaemons/
+/usr/local/inithooks/firstboot.d/
 
 The command will look to see if the there is a node_modules folder, and if none exists, it will activate the
 npm installer to install the packages listed in the package.json file.  
