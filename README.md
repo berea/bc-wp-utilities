@@ -22,9 +22,9 @@ scripts folder, thereby removing the 100gulp.sh from activating.
 
 In your VM, enter this into the console
 
-*curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -*
+*curl -sL https://deb.nodesource.com/setup_0.12 | bash -*
 
-*sudo apt-get install -y nodejs*
+*apt-get install -y nodejs*
 
 ##Installing Gulp through NPM##
 
