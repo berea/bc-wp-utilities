@@ -1,9 +1,8 @@
 #
 #!/inithooks/firstinit.d/
 #
-# This file automatically starts the gulpfile
-# which will watch and auto compile upon any change
-# in the source files.
+# This file removes the gulpfile from the everyboot
+# script folder.
 #
 
 echo "I'm a $OSTYPE computer!"
@@ -14,12 +13,4 @@ if [[ "$OSTYPE" == "linux"* ]]; then
 	echo ""
 	ls /usr/lib/inithooks/everyboot.d/
 	
-#elif [[ "$OSTYPE" == "MAC"* ]]; then
-	#cp "gulpscript/100gulp.sh" "/Library/LaunchDaemons/"
-	
-#else
-	#echo "Nothing...."
 fi
-
-#elif [[ $OSTYPE == "WIN32"*]]; then
-#	copy "gulpscript\100gulp.sh" ""

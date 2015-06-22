@@ -1,7 +1,7 @@
 #
 #!/inithooks/firstinit.d/
 #
-# This file automatically starts the gulpfile
+# This file copies a file to the everyboot folder
 # which will watch and auto compile upon any change
 # in the source files.
 #
