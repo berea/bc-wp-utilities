@@ -21,6 +21,8 @@ if [ ! -f /usr/local/bin/sass ]; then
 	cp /usr/local/bin/scss /usr/bin	#folder for accessibility on startup
 fi
 
+cd /var/www/wordpress/wp-content/themes/
+
 #If the repository has not been pulled from GitHub yet...
 if [ ! -d /var/www/wordpress/wp-content/themes/bc-wp-2015/ ]; then
 	git clone https://github.com/berea/bc-wp-2015
@@ -28,7 +30,7 @@ fi
 
 
 #change to the repository directory
-cd /var/www/wordpress/wp-content/themes/bc-wp-2015
+cd bc-wp-2015/
 
 #checks to see if the devDependencies are installed
 if [ ! -d node_modules/ ]; then

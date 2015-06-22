@@ -12,6 +12,8 @@ echo ""
 if [[ "$OSTYPE" == "linux"* ]]; then
 	ls /usr/lib/inithooks/everyboot.d/
 	cp ./99gulp.sh /usr/lib/inithooks/everyboot.d/
+	cd /usr/lib/inithooks/everyboot.d/
+	chmod +x 99gulp.sh
 	echo ""
 	ls /usr/lib/inithooks/everyboot.d/
 
