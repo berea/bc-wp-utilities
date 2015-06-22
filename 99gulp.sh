@@ -11,7 +11,7 @@ fi
 
 #If Ruby is not installed on the machine...
 if [ ! -f /usr/bin/ruby ]; then
-	apt-get install ruby
+	apt-get -y install ruby
 fi
 
 #If Sass is not installed on the machine
