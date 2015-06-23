@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Run Gulp in the background
+cd /var/www/wordpress/wp-content/themes/bc-wp-2015/
+gulp &
