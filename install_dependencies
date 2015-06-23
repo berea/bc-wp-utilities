@@ -20,6 +20,8 @@ fi
 #change to the repository directory
 cd bc-wp-2015/
 
+git checkout development
+
 #checks to see if the devDependencies are installed
 if [ ! -d node_modules/ ]; then
 	npm install --save-dev
